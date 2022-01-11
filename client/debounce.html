@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>防抖功能封装</title>
+   <link rel="shortcut icon" href="http://www.suning.com/favicon.ico" type="image/x-icon" />
+   <style>
+     .content{
+       height: 2000px;
+     }
+   </style>
+</head>
+<body>
+    <div class="content">
+        滚动区域
+    </div>
+    <script src="../lib/debounce.js"></script>
+    <script>
+     window.addEventListener('scroll', debounce(function(event){
+         console.log(this, event);
+     }, 200));
+    </script>
+</body>
+</html>
