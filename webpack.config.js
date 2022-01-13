@@ -4,9 +4,9 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const ClearWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
-  entry: './js/main.js',
+  entry: './js/index.js',
   output: {
-    filename: 'bundle.js',
+    filename: 'index.js',
     // 将输出的文件都放在dist目录下
     path: path.resolve(__dirname, 'dist'),
     publicPath: '/dist'
