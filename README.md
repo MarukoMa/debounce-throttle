@@ -4,6 +4,28 @@
 * 场景   
     表单提交、调整浏览器窗口大小时，resize 次数过于频繁，造成计算过多，此时需要一次到位，就用到了防抖
 
+## Installation
+
+`$ npm i static-koa`
+
+## Usage
+### throttle
+```javascript
+    import { throttle } from 'debounce-add-throttle';
+    button.addEventListener('click', throttle(function(event) {
+              console.log(this, event);
+        }, 1000, 1));
+
+```
+### throttle
+```javascript
+    import { debounce } from 'debounce-add-throttle';
+    window.addEventListener('scroll', debounce(function(event){
+         console.log(this, event);
+     }, 200));
+
+```
+
 ## options
 * fn   
     函数,处理实际业务逻辑
