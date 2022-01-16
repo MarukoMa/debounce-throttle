@@ -1,6 +1,6 @@
 {
   "name": "debounce-add-throttle",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "debounce-add-throttle",
   "main": "index.js",
   "scripts": {
